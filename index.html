@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hockey</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-style {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              pcolor: "#13131899",
+              hcolor: "#131318",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="mx-[7%]">
+      <!--NAV-->
+      <div class="navbar bg-base-100 max-w-screen-lg mx-auto my-10 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-[#FF4240]">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl gap-0"
+            >Hockeys<span class="text-[rgb(255,66,64)]">'</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[#FF4240]">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-center text-black">
+          <div class="text-[#89898B] ">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-[#FF4240] text-white w-28 ml-8 lg:mr-16"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--carousel-->
+      <section class="container max-w-screen-lg mx-auto">
+        <div class="relative">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full h-[260px] lg:h-[550px]">
+              <img src="g/1.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle bg-black text-white"
+                  >❮</a
+                >
+                <a href="#slide2" class="btn btn-circle bg-black text-white"
+                  >❯</a
+                >
+              </div>
+
+              
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/banner2.jpeg" class="w-full h-[260px] lg:h-[550px]" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+              
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/banner3.jpeg" class="w-full h-[260px] lg:h-[550px]" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full h-[260px] lg:h-[550px]">
+              <img src="Images/banner4.jpeg" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+                class="lg:absolute lg:top-80 lg:left-[600px] lg:mr-10 bg-black text-white rounded-lg p-6 mt-6"
+              >
+                <h3 class="text-xl">Meet all the heroes from the field</h3>
+                <p class="text-sm text-[#ffffff99] pt-4">
+                  Great moments are born from great opportunities.NAPA Hockey Heroes Weekend Spend an entire weekend with your hockey heroes! May 31 - June 2, 2024 in Moncton 
+                </p>
+              </div>
+        </div>
+        
+      <div class="border-t-2 border-dashed mt-16">
+
+      </div>
+    
+    </section>
+      
+    </header>
+    <main class="mx-[7%]">
+        
+      <!--hockey club-->
+      <section class="max-w-screen-lg mx-auto text-center my-16 ">
+        <h3 class="text-hcolor text-2xl font-extrabold mb-6">
+          Professional Hockeys Club
+        </h3>
+        <p class="text-pcolor text-sm w-[400px] mx-auto lg:w-[600px]">
+          Want to bring the joy of hockey into your everyday routine? Welcome to
+          our clubs.
+        </p>
+
+        <!--progress-->
+        <div
+          class="grid grid-cols-1 pb-12 lg:grid-cols-4 mt-9 border-y-2 border-dashed"
+        >
+          <!--card1-->
+          <div class="card bg-base-100">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-red-400 font-bold rotate-90"
+                style="--value: 87"
+                role="progressbar"
+              >
+                <span class="text-bold text-black -rotate-90">87%</span>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h4 class="card-title text-sm font-bold text-hcolor -mt-5">
+                Prayer Facility
+              </h4>
+              <p class="text-pcolor text-xs">
+                Quite and clean place for Prayer.
+              </p>
+            </div>
+          </div>
+          <!--card2-->
+          <div class="card bg-base-100">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-green-400 font-bold rotate-90"
+                style="--value: 95"
+                role="progressbar"
+              >
+                <span class="text-bold text-black -rotate-90">95%</span>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h4 class="card-title text-sm font-bold text-hcolor -mt-5">
+                Experienced Coach
+              </h4>
+              <p class="text-pcolor text-xs">
+                Quite and clean place for Prayer.
+              </p>
+            </div>
+          </div>
+          <!--card3-->
+          <div class="card bg-base-100">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-yellow-300 font-bold rotate-90"
+                style="--value: 90"
+                role="progressbar"
+              >
+                <span class="text-bold text-black -rotate-90">90%</span>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h4 class="card-title text-sm font-bold text-hcolor -mt-5">
+                Senior Player
+              </h4>
+              <p class="text-pcolor text-xs">
+                Quite and clean place for Prayer.
+              </p>
+            </div>
+          </div>
+          <!--card4-->
+          <div class="card bg-base-100">
+            <figure class="px-10 pt-10">
+              <div
+                class="radial-progress text-blue-400 font-bold rotate-90"
+                style="--value: 80"
+                role="progressbar"
+              >
+                <span class="text-bold text-black -rotate-90">80%</span>
+              </div>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h4 class="card-title text-sm font-bold text-hcolor -mt-5">
+                Training Ground
+              </h4>
+              <p class="text-pcolor text-xs">
+                Quite and clean place for Prayer.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Program Section-->
+    <section class="max-w-screen-lg mx-auto text-center my-16">
+        <h3 class="text-hcolor text-2xl font-extrabold mb-6">
+            Program Section
+          </h3>
+          <p class="text-pcolor text-sm w-[400px] mx-auto lg:w-[800px] mb-10">
+            Junior and senior leagues are for the best players below the major hockey league levels. Although some major league/professional league players end up playing in the senior leagues once their careers are over, so that they can still play against players that are close to or as good as them.
+        </p>
+
+          <div class="border-y-2 py-16 border-dashed">
+        <div class="lg:grid grid-cols-6 gap-10 space-y-5 lg:space-y-0">
+            <!--Junior-->
+<div class="relative h-[336px] rounded-xl bg-no-repeat col-span-3 bg-[linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(./Images/junior.png)]">
+    
+    <div class="absolute top-20 lg:top-28 flex flex-col gap-4 items-start px-8">
+        <h3 class="text-2xl font-extrabold text-white">Junior Program</h3>
+    <p class="text-white lg:w-[450px] text-start ">
+    Hockey's junior program provides opportunities for players ages 16-to-20 to hone and enhance their skills. 
+    </p>
+    <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+    </div>
+</div>
+<!--Senior-->
+<div class="relative h-[336px] rounded-xl bg-no-repeat col-span-3 bg-[linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(./Images/senior.png)]">
+    
+    <div class="absolute top-20 lg:top-28 flex flex-col gap-4 items-start px-8">
+        <h3 class="text-2xl font-extrabold text-white">Senior Program</h3>
+    <p class="text-white lg:w-[450px] text-start ">
+      Senior hockey refers to semi-professional ice hockey competition. There are no age restrictions for Senior players.
+    </p>
+    <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+    </div>
+    </div>
+<!--pro-->
+<div class="relative h-[336px] rounded-xl object-cover bg-no-repeat col-span-6 bg-[linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.4)),url(./Images/pro.png)]">
+    
+    <div class="absolute top-20 lg:top-36 flex flex-col gap-4 items-start px-8">
+        <h3 class="text-2xl font-extrabold text-white">Professional Program</h3>
+    <p class="text-white lg:w-[450px] text-start ">
+      Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play.  
+    </p>
+    <button class="btn bg-[#FF4240] text-white border-none">Register Now!</button>
+    </div>
+</div>
+        </div>
+    </div>
+    </section>
+      <!--Products section-->
+      <section class="max-w-screen-lg mx-auto text-center my-16">
+        <h3 class="text-hcolor text-2xl font-extrabold mb-6">
+          Our New Products
+        </h3>
+        <p class="text-pcolor text-sm w-[400px] mx-auto lg:w-[600px]">
+          Proudly AMERICAN xHockeyProducts is America's 1st star for hockey
+          training aids, equipment, gear and accessories. We offer FREE
+          shipping!
+        </p>
+        <!--cards starts here-->
+        <div class="mt-10 pb-16 border-y-2 border-dashed">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
+            <!--card1-->
+            <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4 mt-16 lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/5.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                 Bomber Jacket
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+              Most demanding Red & white bomber jacket.
+                </p>
+
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                  <h4 class="text-[#FF4240] text-sm font-bold">
+                    Price - $22.00
+                  </h4>
+                  <div class=" flex items-center space-x-1">
+                    <img
+                      class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                      src="Images/cart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">Delivery Fee</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <!--card2-->
+              <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4 mt-16 lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/6.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                  Hockey Ball
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+                  Winnwell Street Hockey Balls for Indoor & Outdoor - Made for for Field, Road & Street.
+                </p>
+
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                    <h4 class="text-[#FF4240] text-sm font-bold">
+                      Price - $22.00
+                    </h4>
+                    <div class=" flex items-center space-x-1">
+                      <img
+                        class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                        src="Images/cart.svg"
+                        alt=""
+                      />
+                      <p class="text-pcolor text-xs">Delivery Fee</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <!--card3-->
+              <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4 lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/7.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                  Hat
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+                  The perfect lids for any hockey enthusiasts.
+                </p>
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                    <h4 class="text-[#FF4240] text-sm font-bold">
+                      Price - $22.00
+                    </h4>
+                    <div class=" flex items-center space-x-1">
+                      <img
+                        class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                        src="Images/cart.svg"
+                        alt=""
+                      />
+                      <p class="text-pcolor text-xs">Delivery Fee</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <!--card4-->
+              <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4  lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/8.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                 Jersey
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+                  Made of 100% polyester, this teal and black vintage style.
+                </p>
+
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                    <h4 class="text-[#FF4240] text-sm font-bold">
+                      Price - $22.00
+                    </h4>
+                    <div class=" flex items-center space-x-1">
+                      <img
+                        class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                        src="Images/cart.svg"
+                        alt=""
+                      />
+                      <p class="text-pcolor text-xs">Delivery Fee</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              <!--card5-->
+              <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4  lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/9.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                 Helmet
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+                  The safest, most comfortable hockey helmets and facial protection for all levels.
+                </p>
+
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                    <h4 class="text-[#FF4240] text-sm font-bold">
+                      Price - $22.00
+                    </h4>
+                    <div class=" flex items-center space-x-1">
+                      <img
+                        class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                        src="Images/cart.svg"
+                        alt=""
+                      />
+                      <p class="text-pcolor text-xs">Delivery Fee</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+         
+              <!--card6-->
+              <div 
+              class="card lg:card-side bg-base-100 border-2 rounded-lg lg:px-4  lg:h-[200px] grid grid-cols-1 lg:flex items-center">
+            <div>
+                  <figure><img class="mt-7 w-[300px] h-60 lg:h-auto lg:w-32 lg:mt-0 " src="Images/10.png" alt="Movie" /></figure>
+            </div>
+              <div
+                class="lg:flex lg:flex-col lg:items-start lg:justify-center space-x-8 space-y-2 lg:p-0 p-8">
+                <div class="flex space-x-5">
+                  <div class="flex items-center space-x-2 ml-8">
+                    <img
+                      class="text-pcolor text-xs w-5"
+                      src="Images/star.png"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">5.0</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/viewers.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">20</p>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <img
+                      class="text-pcolor text-xs"
+                      src="Images/heart.svg"
+                      alt=""
+                    />
+                    <p class="text-pcolor text-xs">200</p>
+                  </div>
+                </div>
+                <h2 class="card-title card-title text-sm font-bold text-hcolor">
+                Football
+                </h2>
+                <p class="text-pcolor text-xs text-start">
+                  Football balls & mini footballs(1000+)
+                </p>
+
+                <div class=" grid grid-cols-1 gap-2 justify-items-start lg:flex space-x-3">
+                    <h4 class="text-[#FF4240] text-sm font-bold">
+                      Price - $22.00
+                    </h4>
+                    <div class=" flex items-center space-x-1">
+                      <img
+                        class="text-pcolor text-xs w-6 -ml-4 lg:ml-0"
+                        src="Images/cart.svg"
+                        alt=""
+                      />
+                      <p class="text-pcolor text-xs">Delivery Fee</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--FAQ section-->
+      <section class="max-w-screen-lg mx-auto text-center my-16">
+       
+        <h3 class="text-hcolor text-2xl font-extrabold mb-6">
+            Clients Question
+          </h3>
+          <p class="text-pcolor text-sm w-[400px] mx-auto mb-12 lg:w-[600px]">
+            Here are the most frequently asked questions by our Clients.
+          </p>
+          <div class="border-y-2 py-16 border-dashed">
+
+        <div class=" lg:flex justify-between items-center gap-5 px-5 border-2 rounded-lg">
+          <div class="">
+            <img class="lg:h-[420px] pt-5 lg:pt-0" src="Images/11.png" alt="" />
+          </div>
+          <div class="lg:w-[560px]">
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title text-xl font-medium text-start">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p class="text-pcolor  text-start">The Ultimate hockey megastore with the best hockey equipment selection,including the latest makes & models of Hockey Sticks, Hockey Skates.</p>
+              </div>
+            </div>
+
+            <hr />
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium text-start">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p class="text-pcolor text-start"> We provide players with hockey training articles, videos, and workout programs to help them improve their hockey game.</p>
+              </div>
+            </div>
+            <hr />
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium text-start">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p class="text-pcolor text-start">Allows the student to work on the things that they need the most help with. Private lessons allow for a whole range of hockey skills to be covered.</p>
+              </div>
+            </div>
+            <hr />
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium text-start">Ski Touring</div>
+              <div class="collapse-content">
+                <p class="text-pcolor text-start"> Skiing requires a number of new skills, like using touring bindings, skinning uphill, doing uphill kick turns, managing terrain</p>
+              </div>
+            </div>
+            <hr />
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium text-start">Booking</div>
+              <div class="collapse-content">
+                <p class="text-pcolor text-start">Please contact one of our sales reps to book your team reservation.</p>
+              </div>
+            </div>
+            <hr />
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-xl font-medium text-start">Pricing</div>
+              <div class="collapse-content">
+                <p class="text-pcolor text-start">Monday Night Hockey (2008-2019) will be $560 ($520 until June 9th); $40 Late Registration Fee charged after October 9th.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </section>
+      <!--Get in touch section-->
+      <section class="max-w-screen-lg mx-auto text-center my-16">
+        <h3 class="text-hcolor text-2xl font-extrabold mb-6">
+          Get In Touch
+        </h3>
+        <p class="text-pcolor text-sm w-[400px] mx-auto mb-12 lg:w-[600px]">
+          If you'd like to know  more about us feel free to get in touch.
+        </p>
+        <div class="border-b-2 border-dashed my-16"></div>
+<!--div1-->
+        <div class="lg:flex gap-12  ">
+    <!--div2-->      
+<div class="space-y-6 border-2 p-8 rounded-lg lg:w-96">
+  <div class="grid  justify-start bg-[#bce86d1a] rounded-xl justify-items-start p-10">
+    <img src="Images/Group 1171275317.png" alt="">
+    <p class="text-xs text-gray-400 mt-6">Phone Number
+    </p>
+    <h4 class="font-bold">(+62) 123-321-543</h4>
+  </div>
+  <div class="grid  justify-start bg-[#fddd5f1a] rounded-xl justify-items-start p-10">
+    <img src="Images/Group 1171275318.png" alt="">
+    <p class="text-xs text-gray-400 mt-6">E-mail</p>
+    <h4 class="font-bold">hockeys@support.com</h4>
+  </div>
+  <div class="grid justify-start bg-[#629cf31a] rounded-xl justify-items-start p-10">
+    <img src="Images/Group 1171275321.png" alt="">
+    <p class="text-xs text-gray-400 mt-6">
+      Location
+    </p>
+    <h4 class="font-bold">Nanjing,Jiangsu,China</h4>
+  </div>
+</div>
+<!--div3-->
+<div class=" lg:w-[px]">
+<form action="" class=" lg:w-[600px]">
+  <div class="lg:flex gap-6">
+    <label class="form-control w-full ">
+      <div class="label">
+        <span class="label-text font-bold text-lg">Your Name</span>
+        
+      </div>
+      <input type="text" placeholder="Enter Your Name" class="input input-bordered w-auto  bg-[#13131808]" />
+      
+    </label>
+    <label class="form-control w-full ">
+      <div class="label">
+        <span class="label-text font-bold text-lg">Your Email</span>
+        
+      </div>
+      <input type="text" placeholder="Enter Your Email" class="input input-bordered w-auto  bg-[#13131808]" />
+      
+    </label>
+  </div>
+  <div class="lg:flex gap-6">
+    <label class="form-control w-full ">
+      <div class="label">
+        <span class="label-text font-bold text-lg">Subject</span>
+        
+      </div>
+      <input type="text" placeholder="Enter Your Subject" class="input input-bordered w-auto bg-[#13131808]" />
+      
+    </label>
+    <label class="form-control w-full ">
+      <div class="label">
+        <span class="label-text font-bold text-lg">Phone Number</span>
+        
+      </div>
+      <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-auto bg-[#13131808]" />
+      
+    </label>
+  </div>
+  <label class="form-control  ">
+    <div class="label">
+      <span class="label-text font-bold text-lg">Message</span>
+      
+    </div>
+  <textarea class="textarea textarea-bordered lg:pb-[340px] pb-24 mb-6 bg-[#13131808] lg:w-[600px]" placeholder=" Write Your Message"></textarea>
+</label>
+</form>
+<button class="btn bg-[#FF4240] text-white w-full lg:w-[600px]">Submit Message</button>
+
+</div>
+        </div>
+        <div class="border-2 rounded-xl bg-[#13131808] p-10 mt-10 ">
+          <h3 class="font-bold text-xl ">Social media</h3>
+          <img class="mx-auto pt-5" src="Images/Social icons.svg" alt="">
+        </div>
+      </section>
+    </main>
+    <footer class="footer p-24 lg:p-10 bg-hcolor text-neutral-content text-center lg:text-left">
+        <div class="lg:flex justify-between justify-items-center max-w-screen-lg mx-auto gap-9 lg:gap-44">
+          <div class="">
+            <nav>
+              <header class=" text-white text-xl font-extrabold">Get In Touch</header> 
+             <p class="text-gray-400">If you'd like to know  more about us <br>feel free to get in touch.</p>
+             <div class="flex items-center justify-center lg:justify-start gap-2">
+              <img src="Images/mailicon.svg" alt="">
+              <p class="text-gray-400">hockeys@support.com</p>
+             </div>
+             <div class="flex items-center justify-center lg:justify-start gap-2">
+              <img src="Images/call.svg" alt="">
+              <p class="text-gray-400">(+62) 123-321-543</p>
+             </div>
+            </nav> 
+          </div>
+         
+          <div class="flex gap-9 lg:gap-44">
+            <div> 
+              <nav>
+                <header class=" text-white text-[17px] font-extrabold">Company</header> 
+                <a class="link link-hover text-gray-400">About us</a><br>
+                <a class="link link-hover text-gray-400">Leadership</a><br>
+                <a class="link link-hover text-gray-400">Careers</a><br>
+                <a class="link link-hover text-gray-400">News & Article</a><br>
+                <a class="link link-hover text-gray-400">Legal Notice</a><br>
+              </nav>
+            </div> 
+            <div>
+              <nav>
+                <header class=" text-white text-[17px] font-extrabold">Support</header> 
+                <a class="link link-hover text-gray-400">Help Center</a><br>
+                <a class="link link-hover text-gray-400">FAQ</a><br>
+                <a class="link link-hover text-gray-400">Ticket Support</a><br>
+                <a class="link link-hover text-gray-400">Contact Us</a><br>
+              </nav>
+            </div>
+          </div>
+         
+          
+          <div>
+            <nav>
+              <header class=" text-white text-[17px] font-extrabold">Services</header> 
+              <a class="link link-hover text-gray-400">Academy</a><br>
+              <a class="link link-hover text-gray-400">Group Lesson</a><br>
+              <a class="link link-hover text-gray-400">Private Lesson</a><br>
+              <a class="link link-hover text-gray-400">Hockey for kids</a><br>
+              <a class="link link-hover text-gray-400">Hockey for Adults</a><br>
+            </nav>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
